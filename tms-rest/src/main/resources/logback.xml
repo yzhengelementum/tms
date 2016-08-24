@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <property scope="context" name="appName" value="tms" />
+    <include resource="logback-base.xml"/>
+
+</configuration>

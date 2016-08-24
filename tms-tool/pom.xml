@@ -6,19 +6,23 @@
         <artifactId>tms-server</artifactId>
         <groupId>com.tms.server</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.tms.server</groupId>
-    <artifactId>tms-model</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <name>TMS Model</name>
+    <artifactId>tms-tool</artifactId>
+    <name>TMS Tool</name>
     <packaging>jar</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+    </dependencies>
 
 
 </project>
