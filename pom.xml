@@ -13,6 +13,7 @@
         <module>tms-config</module>
         <module>tms-tool</module>
         <module>tms-rest</module>
+        <module>tms-relationaldb</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
@@ -31,6 +32,7 @@
         <javax.servlet.version>3.0.1</javax.servlet.version>
         <lombok.version>1.16.6</lombok.version>
         <javax.ws.rs.version>2.0.1</javax.ws.rs.version>
+        <javax.validation.version>1.1.0.Final</javax.validation.version>
     </properties>
     <build>
         <pluginManagement>
@@ -116,7 +118,11 @@
                 <artifactId>jackson-jaxrs-json-provider</artifactId>
                 <version>${jackson.databind.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>${javax.validation.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
